@@ -25,7 +25,7 @@ void loop() {
 
   digitalWrite(2, HIGH); digitalWrite(3,HIGH); digitalWrite(4,HIGH); // Turn on all the FETs
 
-  globaldimminput = analogRead(A1);
+  globaldimminput = 1023-analogRead(A1);
   //Serial.print("Global Dimm In ="); Serial.print(globaldimminput); Serial.print('\n');
 
   if(globaldimminput != 0)
